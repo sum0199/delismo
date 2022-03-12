@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Delismo</title>
+</head>
+<body>
+    <h1>Delismo</h1>
+    <h2>Laitelan verkko</h2>
+    <h2>Tervetuloa!</h2>
+    <p style="color: red">VAROITUS! Korkean resoluution kuva!</p>
+    <p><button type="button" onclick="näyttääkuvan()">näyttää kuvan</button></p>
+    <img src="mina.gif" id="mina" hidden>
+</body>
+<script>
+    function näyttääkuvan() {
+        document.querySelector("#mina").hidden = !document.querySelector("#mina").hidden;
+    }
+</script>
+</html>
